@@ -191,6 +191,11 @@ There are currently three steps:
     file using `pip`. Creates `outputs/` directory.
   * `lint`: Runs YAML and Python linters. This captures any syntax or
     styling errors with the code.
+    NOTE: Running this on Python 3.9.0 before running lint, do:
+    ```
+    pip uninstall pylint
+    pip install pylint==2.3.1
+    ```
   * `unit`: Runs `unittest` and `pytest` unit tests for the rectangle and
     circle classes. This ensures the methods in each classes are operating
     correctly.
